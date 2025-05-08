@@ -7,7 +7,7 @@
     <title>Mohd Iqbal Shaikh | Web Developer</title>
     <style>
         :root {
-            --primary: #2563eb;
+            --primary: #155efd;
             --secondary: #1e293b;
             --light: #f8fafc;
             --dark: #0f172a;
@@ -160,6 +160,14 @@
             margin-bottom: 20px;
             line-height: 1.2;
         }
+
+        .hero h3{
+            font-size: 20px;
+            margin-bottom: 20px;
+            font-style: italic;
+            color: #fff;
+            font-weight: 500;
+        }
         
         .hero p {
             font-size: 1.2rem;
@@ -196,6 +204,25 @@
             background: var(--primary);
             /* border-color: white; */
         }
+
+        .social-icons a {
+            margin: 0 0.5rem;
+            display: inline-flex;
+            font-size: 1.5rem;
+            padding: 10px;
+            border-radius: 50%;
+            color: #ffffff;
+            background-color: var(--primary);
+            width: 45px;
+            justify-content: center;
+        }
+
+        .social-icons a:hover {
+            background: var(--accent);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(59, 130, 246, 0.3);
+        }
+
         
         .hero-image {
             position: relative;
@@ -700,15 +727,32 @@
         <div class="container hero-content">
             <div class="hero-text">
                 <h1>Hi, I'm <span style="color: var(--primary);">Mohd Iqbal Shaikh</span></h1>
-                <p>Front-End Developer & Web Designer with expertise in HTML, CSS, JavaScript, and WordPress. Currently working at MyCountryMobile Pvt Ltd.</p>
-                <a href="#contact" class="btn">Contact Me</a>
+                <h3>Front-End Developer & Web Designer creating clean, responsive, and user-friendly websites.</h3>
+                <p>I specialize in building intuitive digital experiences using HTML, CSS, JavaScript, and WordPress. Whether it’s a sleek landing page or a dynamic web app, I love turning ideas into engaging interfaces that feel just right.</p>
+                
+                <a href="#contact" class="btn">Let's Connect</a>
                 <a href="https://drive.google.com/file/d/1L7UkfCuhsvxwmwGNJ0CxDKk2LyAG7vKn/view?usp=drivesdk" class="btn btn-outline" id="resumeBtn">View Resume</a>
+    
+                <!-- Social Media Icons -->
+                <div class="social-icons" style="margin-top: 1.5rem;">
+                    <a href="https://github.com/iqbal1631" target="_blank" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/iqbal-shaikh-/" target="_blank" title="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://www.instagram.com/mohdd.iqbal?igsh=MTI1ZmxwMjJ6amhkbg==" target="_blank" title="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
             </div>
+    
             <div class="hero-image">
                 <img src="/images/hero-section.png" alt="Mohd Iqbal Shaikh" class="profile-img">
             </div>
         </div>
     </section>
+    
 
     <!-- About Section -->
     <section id="about" class="section">
@@ -718,11 +762,25 @@
             </div>
             <div class="about-content">
                 <div class="about-text">
-                    <p>I am a passionate Front-End Developer with experience in creating responsive and user-friendly websites. I graduated with a Bachelor's degree in Information Technology from Chetana Institute of Management and Research.</p>
-                    <p>Currently working as a Web Developer at MyCountryMobile Pvt Ltd, I've had the opportunity to work on various web projects and develop tools like CallBomber. I'm constantly expanding my knowledge in web technologies and looking forward to taking on new challenges.</p>
-                    <a href="#contact" class="btn">Let's Connect</a>
+                    <p>
+                        I’m a dedicated Front-End Developer with a strong foundation in HTML, CSS, JavaScript, and WordPress. With a Bachelor's degree in Information Technology from Chetana Institute of Management and Research, I’ve built responsive, user-focused websites and tools like CallBomber. I enjoy transforming ideas into seamless digital experiences and actively seek out new technologies to grow as a developer.
+                    </p>
+    
+                    <ul style="margin-top: 1rem; padding-left: 1.2rem;">
+                        <li>Responsive Web Design & Cross-Browser Compatibility</li>
+                        <li>Custom WordPress Development (Elementor, Plugins, Theme Styling)</li>
+                        <li>JavaScript Functionality & DOM Manipulation</li>
+                        <li>Clean UI/UX Design with HTML & CSS</li>
+                        <li>Performance Optimization & SEO Best Practices</li>
+                        <li>Familiar with Git and CMS platforms</li>
+                        <li>Quick learner, always exploring new tools and design trends</li>
+                    </ul>
+    
+                    <a href="#projects" class="btn" style="margin-top: 1.5rem;">View My Work</a>
                 </div>
+    
                 <div class="skills">
+                    <!-- Skills remain unchanged -->
                     <div class="skill-item">
                         <div class="skill-name">
                             <span>HTML</span>
@@ -807,8 +865,7 @@
                 </div>
             </div>
         </div>
-    </section>
-
+    </section>    
     <!-- Experience Section -->
     <section id="experience" class="section experience">
         <div class="container">
@@ -891,6 +948,21 @@
                     </div>
                 </a>
                 </div>
+                <div class="project-card">
+                    <a href="http://mohdiqbal.infinityfreeapp.com/wp1/keyhaven/">
+                    <!-- <img src="/api/placeholder/400/200" alt="WordPress Blog" class="project-img"> -->
+                    <div class="project-info">
+                        <h3 class="project-title">Real Estate Landingpage</h3>
+                        <p class="project-desc">Created and customized a realestate homepage with custom themes as an assessment with custom domain and used plugins also.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">WordPress</span>
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JS</span>
+                        </div>
+                    </div>
+                </a>
+                </div>
             </div>
         </div>
     </section>
@@ -952,12 +1024,6 @@
 
     <footer>
         <div class="container">
-            <div class="social-links">
-                <a href="https://www.linkedin.com/" target="_blank" class="social-link"><i class="fab fa-linkedin-in"></i></a>
-                <a href="https://github.com/" target="_blank" class="social-link"><i class="fab fa-github"></i></a>
-                <a href="https://twitter.com/" target="_blank" class="social-link"><i class="fab fa-twitter"></i></a>
-                <a href="https://www.instagram.com/" target="_blank" class="social-link"><i class="fab fa-instagram"></i></a>
-            </div>
             <p>&copy; 2025 Mohd Iqbal Shaikh. All Rights Reserved.</p>
         </div>
     </footer>
